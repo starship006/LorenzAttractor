@@ -42,14 +42,9 @@ void setup() {
    dots.add(dot4);*/
 
   for (int i=1; i<2550; i++) {
-    //usually value 2 is 25500
-    lorenzDot dotHop = new lorenzDot(i*0.0001, i*0.0001, i*0.0001);
+        lorenzDot dotHop = new lorenzDot(i*0.0001, i*0.0001, i*0.0001);
     dots.add(dotHop);
   }
-  //lorenzDot dotHop1 = new lorenzDot(0.001042,0.002059,0.003001);
-  //dots.add(dotHop1);
-  // lorenzDot dotHop = new lorenzDot(0.001,0.002,0.003);
-  // dots.add(dotHop);
 }
 
 void draw() {
@@ -73,10 +68,10 @@ void draw() {
   }
 
 
-  saveFrame("completeSet/gol_####.png");
+  //saveFrame("completeSet/gol_####.png");   used to create the video
   println(timerCount);
-  //println(cam.getLookAt());
-  //println(cam.getDistance());
+  //println(cam.getLookAt());         used to debug
+  //println(cam.getDistance());       used to debug
   timerCount++;
 }
 
